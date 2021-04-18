@@ -403,10 +403,10 @@ namespace SleepyDiscord {
 					object.*(field.member) = Helper::toType(iterator->value);
 			} else if (field.type == REQUIRIED_FIELD) {
 				//error
-				std::cout << 
-				"JSON Parse Error: "
-				"variable #" << i << ": \"" << field.name << "\" not found. "
-				"Please look at call stack from your debugger for more details.";
+				// std::cout << 
+				// "JSON Parse Error: "
+				// "variable #" << i << ": \"" << field.name << "\" not found. "
+				// "Please look at call stack from your debugger for more details.";
 			}
 			fromJSON<ResultingObject, i + 1>(object, value);
 		}
